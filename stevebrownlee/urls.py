@@ -1,12 +1,13 @@
 from django.conf.urls import url, include
 from rest_framework import routers
-from api.views import JobViewSet, ContactViewSet, SkillViewSet, SocialViewSet
+from api.views import JobViewSet, ContactViewSet, SkillViewSet, SocialViewSet, InterestViewSet
 
 router = routers.DefaultRouter()
 router.register(r'jobs', JobViewSet)
-router.register(r'social_sites', SocialViewSet)
+router.register(r'profiles', SocialViewSet)
 router.register(r'skills', SkillViewSet)
 router.register(r'contacts', ContactViewSet)
+router.register(r'interests', InterestViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
