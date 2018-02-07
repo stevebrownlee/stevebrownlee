@@ -42,15 +42,15 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-    # 'DEFAULT_RENDERER_CLASSES': (
+    #'DEFAULT_RENDERER_CLASSES': (
     #     'rest_framework.renderers.BrowsableAPIRenderer',
     #     'rest_framework.renderers.MultiPartRenderer',
     #     'rest_framework.renderers.AdminRenderer',
-    #     'rest_framework.renderers.JSONRenderer',
-    # ),
-    # 'DEFAULT_PARSER_CLASSES': (
-    #     'rest_framework.parsers.JSONParser',
-    # ),
+    #    'rest_framework.renderers.JSONRenderer',
+    #),
+    #'DEFAULT_PARSER_CLASSES': (
+    #    'rest_framework.parsers.JSONParser',
+    #),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
@@ -138,5 +138,5 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, "../lib/python3.5/site-packages/rest_framework")
 STATIC_URL = '/static/'

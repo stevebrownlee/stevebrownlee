@@ -13,6 +13,7 @@ class Job(models.Model):
     end_year = models.DateField(blank=True, null=True)
     city = models.CharField(max_length=25)
     state = models.CharField(max_length=2)
+    synopsis = models.TextField()
 
     def __str__(self):
         return "{} at {}".format(self.role, self.organization)
