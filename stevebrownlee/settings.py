@@ -25,7 +25,7 @@ SECRET_KEY = 'cdavvx_t1a3*@28z8i+q-4ryxab#q8vw0-z8rrp3cf2!74-vfs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','api.stevebrownlee.com']
+ALLOWED_HOSTS = ['web', 'localhost','api.stevebrownlee.com']
 
 
 # Application definition
@@ -58,7 +58,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 10,
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
 }
 
 MIDDLEWARE = [
