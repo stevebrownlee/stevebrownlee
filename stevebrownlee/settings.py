@@ -25,7 +25,7 @@ SECRET_KEY = 'cdavvx_t1a3*@28z8i+q-4ryxab#q8vw0-z8rrp3cf2!74-vfs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api.stevebrownlee.local', 'localhost','api.stevebrownlee.com']
+ALLOWED_HOSTS = ['api.stevebrownlee.local', 'www.nss.team', 'nss.team','api.stevebrownlee.com']
 
 
 # Application definition

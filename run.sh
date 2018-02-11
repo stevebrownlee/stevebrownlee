@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker run -d -it -p 8888:8000 stevebrownlee/api
+#docker run -d -it -p 8888:8000 stevebrownlee/api
+docker-compose up
+

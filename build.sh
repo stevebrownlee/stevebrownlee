@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t stevebrownlee/api .
+docker-compose build
