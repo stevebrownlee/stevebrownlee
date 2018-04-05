@@ -7,7 +7,7 @@ services:
       - "80:80"
     volumes:
       - .:/code
-      - ./config/nginx/dev/conf.d:/etc/nginx/conf.d
+      - ./config/nginx/prod/conf.d:/etc/nginx/conf.d
     depends_on:
       - apihost
   apihost:
