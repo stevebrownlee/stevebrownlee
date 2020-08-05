@@ -4,7 +4,7 @@
 
 I coach people in software development by changing confusion into clarity. I reduce the noise to help people learn more effectively. I provide context and narrative to help the learning process be more enjoyable.
 
-I record what I learn at stevebrownlee.com
+I record what I learn at [stevebrownlee.com](https://www.stevebrownlee.com)
 
 ## Tutorials
 
