@@ -1,4 +1,4 @@
 API
-django==1.11
+django==2.2.24
 djangorestframework>=3.7.0
 gunicorn>=19.7.1
