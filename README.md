@@ -10,9 +10,11 @@ I write about software and learning science at [stevebrownlee.com](https://www.s
 
 ## Stats
 
-|  |  |
-|--|--|
-| [![Steve's GitHub stats](https://github-readme-stats.vercel.app/api?username=stevebrownlee&show_icons=true&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats) | [![Steve's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=stevebrownlee)](https://github.com/anuraghazra/github-readme-stats) |
+[![Steve's GitHub stats](https://github-readme-stats.vercel.app/api?username=stevebrownlee&show_icons=true&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+
+## Languages
+
+[![Steve's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=stevebrownlee)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Tutorials
 
