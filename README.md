@@ -4,6 +4,8 @@
 
 I coach people in software development by changing confusion into clarity. I reduce the noise to help people learn more effectively. I provide context and narrative to help the learning process be more enjoyable.
 
+I am a lifelong student of leadership. Leading a team of 24 instructors requires creative strategies, promoting distributed leadership, and coaching others to become leaders.
+
 ## Articles
 
 I write about software and learning science at [stevebrownlee.com](https://www.stevebrownlee.com)
