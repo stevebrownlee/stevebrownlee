@@ -18,22 +18,3 @@ I write about software and learning science at [stevebrownlee.com](https://www.s
 
 [![Steve's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=stevebrownlee)](https://github.com/anuraghazra/github-readme-stats)
 
-## Tutorials
-
-I have some Scrimba interactive screencasts:
-
-### Learn the Foundations
-
-* [Beginner's Guide to JavaScript Variables](https://scrimba.com/p/p7wkGAL/c2KmmMH2)
-* [Beginner's Guide to JavaScript Strings](https://scrimba.com/p/p7wkGAL/cmmVnahW)
-* [Beginner's Guide to Simple Math in JavaScript](https://scrimba.com/p/p7wkGAL/cRDamquQ)
-* [Beginner's Guide to JavaScript String Templates](https://scrimba.com/p/p7wkGAL/cKKaJ6fE)
-* [Beginner's Guide to JavaScript Booleans and Conditional Logic](https://scrimba.com/p/p7wkGAL/cKKan3CB)
-* [Beginner's 2nd Guide to JavaScript Conditional Logic](https://scrimba.com/p/p7wkGAL/c4MKaRf9)
-
-### Advanced Beginner Skills (1-3 years experience)
-
-* [Decoupling Components in JavaScript: Part 1](https://scrimba.com/c/cvwpqVSK)
-* [Decoupling Components in JavaScript: Part 2](https://scrimba.com/c/cmpRQ8Hb)
-
-
