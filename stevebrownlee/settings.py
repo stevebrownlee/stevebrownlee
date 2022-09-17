@@ -25,7 +25,11 @@ SECRET_KEY = 'cdavvx_t1a3*@28z8i+q-4ryxab#q8vw0-z8rrp3cf2!74-vfs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api.stevebrownlee.local', 'www.nss.team', 'nss.team','api.stevebrownlee.com']
+ALLOWED_HOSTS = [
+    'api.stevebrownlee.local',
+    'coaching.stevebrownlee.local',
+    'api.stevebrownlee.com'
+]
 
 
 # Application definition
@@ -39,14 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
+    'coaching',
 ]
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
-    #     'rest_framework.renderers.BrowsableAPIRenderer',
-    #     'rest_framework.renderers.MultiPartRenderer',
-    #     'rest_framework.renderers.AdminRenderer',
-          'rest_framework.renderers.JSONRenderer',
+        #     'rest_framework.renderers.BrowsableAPIRenderer',
+        #     'rest_framework.renderers.MultiPartRenderer',
+        #     'rest_framework.renderers.AdminRenderer',
+        'rest_framework.renderers.JSONRenderer',
     ),
     'DEFAULT_PARSER_CLASSES': (
         'rest_framework.parsers.JSONParser',
@@ -63,6 +68,7 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    "stevebrownlee.virtualhostmiddleware.VirtualHostMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -127,17 +133,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, "../lib/python3.5/site-packages/rest_framework")
-STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    f'{BASE_DIR}/static'
+]
+
+STATIC_URL = 'static/'
+LOGIN_REDIRECT_URL = '/profile'
