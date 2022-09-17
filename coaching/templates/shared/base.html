@@ -14,14 +14,41 @@
 
 <body>
 
-    <nav id="site-nav">
-        <ol class="navList">
-            <li class="navList__route"><a href="{% url 'home' %}">Steve</a></li>
-            <li class="navList__route"><a href="{% url 'logout' %}">Logout</a></li>
-        </ol>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+
+            <div class="menu">
+                <li class="navbar__item">
+                    <a href="{% url 'home' %}">Steve</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="{% url 'process' %}">The Process</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="{% url 'home' %}">Book Consultation</a>
+                </li>
+                {% if not user.is_authenticated %}
+                    <li class="navbar__item pullRight">
+                        <a class="rightNav" href="{% url 'profile' %}">Profile</a>
+                        <a class="rightNav" href="{% url 'logout' %}">Sign Out</a>
+                    </li>
+                {% else %}
+                <li class="navbar__item pullRight">
+                    <a href="{% url 'login' %}">Sign In</a>
+                </li>
+                {% endif %}
+            </div>
+        </ul>
     </nav>
 
-    <main class="main-content">
+    <header class="header">
+        <img class="logo__image" src="{% static 'images/logo.png' %}" alt="Steve Brownlee Coaching" />
+    </header>
+
+    <main class="main">
         {% block content %}
         {% endblock %}
     </main>

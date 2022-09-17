@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import './navbar.css';
 
 /*Typography
 --------------------------------------------------------------*/
@@ -9,7 +10,7 @@ select,
 textarea {
 	color: #404040;
 	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.5;
 }
 
@@ -18,8 +19,23 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
-.main-content {
-    padding: 1em 2em;
+h1 {
+    margin-top: 4rem;
+}
+
+.main {
+    padding: 1em 5em;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2rem 10rem;
+}
+
+.logo__image {
+    max-width: 15rem;
 }
 
 .navList {
@@ -31,5 +47,35 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navList__route {
-    margin: 0 0.5em;
+    margin: 0 1.75em 0 0.5rem;
+}
+
+.rightNav {
+    margin: 0 0 0 1rem;
+}
+
+.pullRight {
+    margin-left: auto;
+}
+
+.table {
+    border: 1px dotted black;
+}
+
+.tr {
+    border: 1px dotted #000;
+}
+
+.table-row-prompt {
+    background-color: rgb(235, 237, 254);
+    padding: 2rem;
+}
+
+.table-row-content {
+    padding: 2rem;
+}
+
+.table-row-header {
+    padding: 0 4rem;
+    font-weight: bolder;
 }
