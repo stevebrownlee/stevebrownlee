@@ -12,6 +12,7 @@ pylint-django = "*"
 gunicorn = "*"
 requests = "*"
 djangorestframework = "*"
+whitenoise = "==6.0.0"
 
 [dev-packages]
 

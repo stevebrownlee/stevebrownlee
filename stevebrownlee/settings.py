@@ -26,9 +26,10 @@ SECRET_KEY = 'cdavvx_t1a3*@28z8i+q-4ryxab#q8vw0-z8rrp3cf2!74-vfs'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'api.stevebrownlee.com',
     'api.stevebrownlee.local',
+    'coaching.stevebrownlee.com',
     'coaching.stevebrownlee.local',
-    'api.stevebrownlee.com'
 ]
 
 
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
@@ -71,6 +73,7 @@ MIDDLEWARE = [
     "stevebrownlee.virtualhostmiddleware.VirtualHostMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -143,6 +146,6 @@ USE_TZ = True
 STATICFILES_DIRS = [
     f'{BASE_DIR}/static'
 ]
-
-STATIC_URL = 'static/'
-LOGIN_REDIRECT_URL = '/profile'
+STATIC_ROOT = '/staticfiles'
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
