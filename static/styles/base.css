@@ -21,18 +21,26 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main {
-    padding: 1em 15em;
+    margin: 1em 10em;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 1150px) {
     .main {
-        padding: 1em 6em;
+        margin: 1em 8em;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990) {
     .main {
-        padding: 1em 3em;
+        margin: 1em 6em;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        margin: 1em 4em;
     }
 }
 
@@ -50,6 +58,9 @@ h1,h2,h3,h4,h5,h6 {
     padding: 2rem 10rem;
 }
 
+.logo__image {
+    max-width: 20rem;
+}
 
 .rightNav {
     margin: 0 0 0 1rem;

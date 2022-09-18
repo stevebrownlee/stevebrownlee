@@ -44,9 +44,11 @@
         </ul>
     </nav>
 
+    {% block header %}
     <header class="header">
         <img class="logo__image" src="{% static 'images/logo.png' %}" alt="Steve Brownlee Coaching" />
     </header>
+    {% endblock %}
 
     <main class="main">
         {% block content %}
