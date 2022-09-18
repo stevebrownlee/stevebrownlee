@@ -1,0 +1,16 @@
+.intro {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro__image {
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 3rem;
+}
+
+.intro__about {
+    padding: 0 3rem;
+}
