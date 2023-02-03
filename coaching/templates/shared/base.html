@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Library</title>
+    <title>Steve Brownlee Coaching</title>
 
     <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
 
@@ -22,22 +22,22 @@
 
             <div class="menu">
                 <li class="navbar__item">
-                    <a href="{% url 'home' %}">Steve</a>
+                    <a href="{% url 'coaching:home' %}">Steve</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="{% url 'process' %}">The Process</a>
+                    <a href="{% url 'coaching:process' %}">The Process</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="{% url 'home' %}">Book Consultation</a>
+                    <a href="{% url 'coaching:home' %}">Book Consultation</a>
                 </li>
                 {% if not user.is_authenticated %}
                     <li class="navbar__item pullRight">
-                        <a class="rightNav" href="{% url 'profile' %}">Profile</a>
-                        <a class="rightNav" href="{% url 'logout' %}">Sign Out</a>
+                        <a class="rightNav" href="{% url 'coaching:profile' %}">Profile</a>
+                        <a class="rightNav" href="{% url 'coaching:logout' %}">Sign Out</a>
                     </li>
                 {% else %}
                 <li class="navbar__item pullRight">
-                    <a href="{% url 'login' %}">Sign In</a>
+                    <a href="{% url 'coaching:login' %}">Sign In</a>
                 </li>
                 {% endif %}
             </div>
